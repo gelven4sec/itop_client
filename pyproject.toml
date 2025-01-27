@@ -1,0 +1,23 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.2.2",
+]
+
+[project]
+name = "itop_client"
+version = "0.1.4"
+description = "Python interface to interacte with iTop REST API"
+authors = [
+    {name = "Gelven", email = "jo.pettersen@protonmail.com"},
+]
+dependencies = [
+    "requests>=2.28.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
